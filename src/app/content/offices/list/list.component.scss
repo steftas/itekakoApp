@@ -1,0 +1,11 @@
+.col.col-sm-12:last-of-type {
+    ::ng-deep {
+        .office-list-div {
+            border-bottom: 0;
+    
+            &::before {
+                display: none;
+            }
+        }
+    }
+}

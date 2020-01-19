@@ -1,0 +1,71 @@
+.office-list-div {
+    padding: 15px;
+    background-color: #34b5dc;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 1px solid #3f51b5;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #34b5dc;
+        bottom: -1px;
+        left: 0;
+    }
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .office-img {
+        margin-right: 15px;
+    }
+
+    .office-info {
+        h3 {
+            font-size: 1em;
+            font-weight: 500;
+            margin: 0 0 5px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #3f51b5;
+            margin: 0;
+        }
+    }
+}
+
+.office-card {
+    text-align: center;
+    height: calc(100% - 15px);
+    margin: 0 0 15px;
+
+    .office-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .office-info {
+        h3 {
+            font-size: 1.2em;
+            font-weight: 500;
+            margin: 25px 0;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}

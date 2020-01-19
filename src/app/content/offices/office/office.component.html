@@ -1,0 +1,21 @@
+<div class="office-list-div" *ngIf="view === 'list'">
+    <div class="office-img">
+        <ngx-avatar [src]="office.photo" [value]="office.name[0]" [round]="true"></ngx-avatar>
+    </div>
+
+    <div class="office-info">
+        <h3 class="office-name">{{office.name}}</h3>
+        <p class="office-address">{{office.description | truncate : 100}}</p>
+    </div>
+</div>
+
+<mat-card class="office-card" *ngIf="view === 'grid'">                       
+    <div class="office-img">
+        <ngx-avatar [src]="office.photo" [value]="office.name[0]" [round]="true" size="75"></ngx-avatar>
+    </div>
+
+    <div class="office-info">
+        <h3 class="office-name">{{office.name}}</h3>
+        <p class="office-address">{{office.description | truncate : 150}}</p>
+    </div>
+</mat-card>
